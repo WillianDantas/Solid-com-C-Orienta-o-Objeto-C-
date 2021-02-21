@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Solid
 {
-     class DezOuVintePorcento : IRegraDeCalculo
+     class QuinzeOuVinteCincoPorcento : IRegraDeCalculo
     {
         public double Calcula(Funcionario funcionario)
         {
-            if(funcionario.SalarioBase > 3000.0)
+            if (funcionario.SalarioBase > 2000.0)
             {
-                return funcionario.SalarioBase * 0.8;
+                return funcionario.SalarioBase * 0.75;
             }
             else
             {
-                return funcionario.SalarioBase * 0.9;
+                return funcionario.SalarioBase * 0.85;
             }
 
         }

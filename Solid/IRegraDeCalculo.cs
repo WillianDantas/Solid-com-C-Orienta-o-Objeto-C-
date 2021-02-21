@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Solid
 {
-    class QuinzeOuVintePorcento
+    public interface IRegraDeCalculo
     {
+        double Calcula(Funcionario funcionario);
     }
 }
