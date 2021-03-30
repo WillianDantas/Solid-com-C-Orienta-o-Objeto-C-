@@ -129,12 +129,62 @@ public class Funcionario
     }
 ```
 
-##   Acoplamento e a estabilidade
+## Acoplamento e a estabilidade
 
 - Grande problema o acoplamento se depende de muitas classes se a mudança, essa mudança pode se propagar. Acabando gerando bugs no sistema.
 - Observação : Tem que saber dividir. Saber quando acoplamento e prejudicial ou não.
 
+```csharp
+    class NotaFiscalDao :IAcaoAposGerarNota
+    {
+        public void Executa(NotaFiscal nf)
+        {
+            Console.WriteLine("Persistindo nota");
+        }
+    }
+```
 
+
+```csharp
+     public NotaFiscal Gera(Fatura fatura)
+        {
+            double valor = fatura.ValorMensal;
+
+            NotaFiscal nf = new NotaFiscal(valor, ImpostoSimplesSobreValor(valor));
+
+            foreach(var acao in acoes)
+            {
+                acao.Executa(nf);
+            }
+
+            return nf;
+        }
+```
+
+## Classes abertas, Open Closed e Dependency Inversion Principles
+
+- Classe fechada para modificação
+```csharp
+		public CalculadoraDePrecos(ITabelaDePreco tabela, IServicoDeEntrega entrega)
+		{
+			this.tabela = tabela;
+			this.entrega = entrega;
+		}
+		
+		public double Calcula(Compra produto)
+        {
+
+            double desconto = this.tabela.DescontoPara(produto.Valor);
+            double frete = this.entrega.Para(produto.Cidade);
+
+            return produto.Valor * (1 - desconto) + frete;
+        }
+		
+		Compra compra = new Compra(500, "sao paulo");
+		CalculadoraDePrecos calc = new CalculadoraDePrecos(new TabelaDePrecoPadrao(), new Transportadora());
+
+		double resultado = calc.Calcula(compra);
+```
 
 
 - Comando Git 
