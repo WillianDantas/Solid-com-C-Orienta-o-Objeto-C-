@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SolidClasseAberta
 {
-    class Transportadora : IServicoDeEntrega
+    public class Transportadora : IServicoDeEntrega
     {
         public double Para(string cidade)
         {

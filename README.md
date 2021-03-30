@@ -186,6 +186,34 @@ public class Funcionario
 		double resultado = calc.Calcula(compra);
 ```
 
+- Classe aberta para modificar
+```csharp
+    public class Transportadora : IServicoDeEntrega
+    {
+        public double Para(string cidade)
+        {
+            return 5;
+
+        }
+        
+    }
+	
+    public class Frete : IServicoDeEntrega
+    {
+        public double Para(string cidade)
+        {
+            if("SAO PAULO".Equals(cidade.ToUpper()))
+            {
+                return 15;
+            }
+
+            return 30;
+
+        }
+    }
+```
+
+
 
 - Comando Git 
 git push -f origin master
