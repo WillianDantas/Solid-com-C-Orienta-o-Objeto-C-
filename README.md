@@ -170,16 +170,16 @@ public class Funcionario
 			this.tabela = tabela;
 			this.entrega = entrega;
 		}
-		
+
 		public double Calcula(Compra produto)
-        {
+		{
 
-            double desconto = this.tabela.DescontoPara(produto.Valor);
-            double frete = this.entrega.Para(produto.Cidade);
+			double desconto = this.tabela.DescontoPara(produto.Valor);
+			double frete = this.entrega.Para(produto.Cidade);
 
-            return produto.Valor * (1 - desconto) + frete;
-        }
-		
+			return produto.Valor * (1 - desconto) + frete;
+		}
+
 		Compra compra = new Compra(500, "sao paulo");
 		CalculadoraDePrecos calc = new CalculadoraDePrecos(new TabelaDePrecoPadrao(), new Transportadora());
 
