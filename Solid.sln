@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid", "Solid\Solid.csproj", "{A5BFAD3B-070F-48A6-9811-ECEF3B960629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidClasseAberta", "SolidClasseAberta\SolidClasseAberta.csproj", "{DC10EFE9-5793-4265-86B0-8371BABAACEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidClasseAberta", "SolidClasseAberta\SolidClasseAberta.csproj", "{DC10EFE9-5793-4265-86B0-8371BABAACEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidEncapsulament", "SolidEncapsulament\SolidEncapsulament.csproj", "{EA79A1C3-A5C0-4198-BF6B-783530F79A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidLiskov", "SolidLiskov\SolidLiskov.csproj", "{219F18A7-601E-4BFB-9BAE-C6E78B8231F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DC10EFE9-5793-4265-86B0-8371BABAACEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC10EFE9-5793-4265-86B0-8371BABAACEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC10EFE9-5793-4265-86B0-8371BABAACEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA79A1C3-A5C0-4198-BF6B-783530F79A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA79A1C3-A5C0-4198-BF6B-783530F79A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA79A1C3-A5C0-4198-BF6B-783530F79A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA79A1C3-A5C0-4198-BF6B-783530F79A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219F18A7-601E-4BFB-9BAE-C6E78B8231F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219F18A7-601E-4BFB-9BAE-C6E78B8231F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219F18A7-601E-4BFB-9BAE-C6E78B8231F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219F18A7-601E-4BFB-9BAE-C6E78B8231F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

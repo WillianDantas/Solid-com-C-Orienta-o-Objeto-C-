@@ -2,7 +2,11 @@
 /Solid/.vs/Solid
 /Solid/obj
 /SolidClasseAberta/obj
+/SolidEncapsulament/obj
+/SolidLiskov/obj
 /obj
 /tools
 /Solid/bin
 /SolidClasseAberta/bin
+/SolidEncapsulament/bin
+/SolidLiskov/bin
